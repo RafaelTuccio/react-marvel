@@ -1,6 +1,12 @@
+import FormHero from "../../components/FormHero.jsx/FormHero"
+import HomeHeader from "../../components/Headers/HomeHeader"
+
 const Home = () => {
     return (
-        <h1>Home</h1>
+        <div>
+            <HomeHeader />
+            <FormHero />
+        </div>
     );
 }
 

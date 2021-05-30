@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 10px 5% 0 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.error{
+    color: red
+}
