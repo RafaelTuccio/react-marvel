@@ -1,8 +1,17 @@
 import HeroCard from "../Cards/HeroCard";
+
+
 const Heroes = (props) => {
+    let { heroes } = props
+
     return(
         <section className="card-container">
-            <HeroCard />
+            {
+                heroes.map((hero) => {
+                    return <HeroCard key={hero.id} hero={hero}/>
+
+                })
+            }
         </section>
     );
 }

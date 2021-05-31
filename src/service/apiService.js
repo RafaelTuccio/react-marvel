@@ -11,7 +11,7 @@ export const getHeroes = async () => {
         let apikey = "&apikey=924ede14a9e9d54b76b557eb701ddf4c";
         let hash = "&hash=0ddec45d15e5daf65919c9ef98e48a06";
         let heroes = await axios.get(url + orderBy + ts + apikey + hash);
-        return heroes;
+        return heroes.data.data.results
     }catch(err){
         console.error(err);
     }
