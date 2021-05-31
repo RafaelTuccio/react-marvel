@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Favorito from "./Favorito";
 import OrderbyAlph from "./Order";
+import Pagination from "./Pagination";
 
 const Filter = () => {
 
@@ -25,9 +26,12 @@ const Filter = () => {
     }
 
     return(
-        <div>
-            <Favorito favorito={favorito} showFavorito={showFavorito}/>
-            <OrderbyAlph order={order} getOrder={getOrder}/>
+        <div className="filter">
+            <Pagination />
+            <div className="order-favorito">
+                <OrderbyAlph order={order} getOrder={getOrder}/>
+                <Favorito favorito={favorito} showFavorito={showFavorito}/>
+            </div>
         </div>
     );
 }

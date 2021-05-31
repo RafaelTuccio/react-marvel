@@ -14,3 +14,29 @@ body{
 .error{
     color: red
 }
+
+.filter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.filter-order{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: red
+}
+.filter-favorito{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    color: red
+}
+
+.order-favorito{
+    display: flex;
+    
+}

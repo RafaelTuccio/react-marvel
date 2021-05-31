@@ -5,14 +5,17 @@ const Favorito = (props) => {
     let {favorito, showFavorito} = props
 
     return(
-        <div onClick={() => {
-            showFavorito()
-        }}>
-            {
-                favorito === false ?
-                <img src={favoritoOff} alt="coracao branco" />
-                : <img src={favoritoOn} alt="coracao vermelho" />
-            }
+        <div className="filter-favorito">
+            <div onClick={() => {
+                showFavorito()
+            }}>
+                {
+                    favorito === false ?
+                    <img src={favoritoOff} alt="coracao branco" />
+                    : <img src={favoritoOn} alt="coracao vermelho" />
+                }
+            </div>
+                <span>Somente favoritos</span>
         </div>
     );
 }
