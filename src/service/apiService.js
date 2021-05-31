@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-export const getHeroes = async () => {
+export const getHeroes = async (order) => {
     try{
         let url = "http://gateway.marvel.com/v1/public/characters?";
         let limit = "limit=1";
@@ -10,12 +10,19 @@ export const getHeroes = async () => {
         let ts = "&ts=1622054338";
         let apikey = "&apikey=924ede14a9e9d54b76b557eb701ddf4c";
         let hash = "&hash=0ddec45d15e5daf65919c9ef98e48a06";
-        let heroes = await axios.get(url + orderBy + ts + apikey + hash);
-        return heroes.data.data.results
+        if(order){
+            let heroes = await axios.get(url + orderBy + ts + apikey + hash);
+            return heroes.data.data.results
+        }else{
+            let heroes = await axios.get(url + ts + apikey + hash);
+            return heroes.data.data.results
+
+        }
     }catch(err){
         console.error(err);
     }
 }
+
 
 export const getHeroByName = async ({name}) =>{
     try{
@@ -31,4 +38,29 @@ export const getHeroByName = async ({name}) =>{
         console.log(erro);
         return erro
     }
+}
+
+export const getHeroesFavoritos = () => {
+    console.log("mostrando todos os favoritos")
+    return ;
+}
+
+export const setHeroesFavoritos = (hero) => {
+    console.log(hero)
+    let favorito = [{}]
+    favorito.push(hero);
+    console.log(favorito);
+    // const favorito = []
+    // favorito =[...favorito, [hero]]
+    // //let favorito = localStorage.getItem("favoritos");
+    // console.log("estava guardado: ",favorito)
+    // console.log(favorito);
+    // localStorage.setItem("favoritos", favorito);
+    // console.log("adicionando herói no favoritos")
+    
+}
+
+export const removeHeroesFavoritos = () => {
+    console.log("removendo heroi dos favoritos")
+    return;
 }

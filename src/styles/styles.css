@@ -42,11 +42,11 @@ body{
 }
 
 .card-hero{
-    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
+    box-sizing: border-box;
 }
 
 .card-legend{
@@ -62,7 +62,9 @@ body{
 }
 
 .card-img{
+    background-color: teal;
     border-bottom: 3px solid red;
+    
 }
 
 footer{

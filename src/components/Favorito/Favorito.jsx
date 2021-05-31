@@ -1,10 +1,23 @@
 import favoritoOff from "../assets/favorito_02.svg";
 import favoritoOn from "../assets/favorito_01.svg";
+import { useContext, useState } from "react";
+import { setHeroesFavoritos } from "../../service/apiService";
+import { FavoritoContext } from "../../service/useFavorito";
+const Favorito = (props) => {
+    let { hero, favoritar } = props
+    let [favorito, setFavorito] = useState(false)
 
-const Favorito = () => {
-    const favorito = false;
+    
     return(
-        <div>
+        <div onClick={() => {
+            favoritar(hero);
+            
+            if(favorito){
+                setFavorito(false)
+            }else{
+                setFavorito(true)
+            }
+        }}>
             {
                 favorito === false ?
                 <img src={favoritoOff} alt="coracao branco" />
