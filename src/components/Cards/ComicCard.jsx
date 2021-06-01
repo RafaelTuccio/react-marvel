@@ -1,12 +1,11 @@
 const ComicCard = (props) => {
-    let comic = {
-        name: "spider man"
-    }
+    let { comic } = props
+    let tamanho = "/portrait_incredible."
 
     return(
         <div>
-            <img src={comic} alt="quadrinhos de superheróis" />
-            <span><strong>{comic.name}</strong></span>
+            <img src={comic.thumbnail.path + tamanho + comic.thumbnail.extension} alt="quadrinhos de superheróis" />
+            <span><strong>{comic.title}</strong></span>
         </div>
     )
 }

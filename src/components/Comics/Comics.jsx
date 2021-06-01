@@ -1,7 +1,7 @@
 import ComicCard from "../Cards/ComicCard";
 
 const Comics = (props) => {
-    let comics = [1, 3, 4, 5, 6]
+    let { comics } = props
     return (
         <section>
             <div>
@@ -9,7 +9,7 @@ const Comics = (props) => {
             </div>
             {
                 comics.map((comic) => {
-                    return <ComicCard />
+                    return <ComicCard comic={comic}/>
                 })
             }
         </section>

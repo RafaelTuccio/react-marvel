@@ -3,7 +3,8 @@ import ic_filme from "../assets/ic_trailer.svg";
 import avaliacaoOn from "../assets/avaliacao_on.svg";
 import avaliacaoOff from "../assets/avaliacao_off.svg";
 
-const ComicMovie = () => {
+const ComicMovie = (props) => {
+    
     return(
         <div>
             <div>

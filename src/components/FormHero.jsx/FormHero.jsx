@@ -4,16 +4,17 @@ import ic_busca from "../assets/ic_busca.svg";
 import search_vermelho from "../assets/search_bar_vermelho.svg";
 
 
-const FormHero = () => {
+const FormHero = (props) => {
     let [name, setName] = useState("")
     let [error, setError] = useState("")
+    let { heroHandle } = props
 
     return(
         <form className="container-column"
             onSubmit={(e) => {
             e.preventDefault();
             if(name){
-                getHeroByName({name});
+                heroHandle({name});
             }else{
                 setError("digite o nome de um heróis para começar a procurar")
             }

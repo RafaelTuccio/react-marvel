@@ -2,10 +2,7 @@ import Favorito from "../Favorito/Favorito";
 
 
 const DescriptionCard = (props) => {
-    let hero = {
-        name: "spider-man",
-        description: "Hulk esmaga homenzinho"
-    }
+    let { hero } = props;
 
 
     return(
