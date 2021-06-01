@@ -9,9 +9,7 @@ function App() {
 
   return (
     <div>
-      <div className="container"> 
         <Home />
-      </div>
       <Footer />
     </div>
     

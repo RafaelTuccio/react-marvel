@@ -9,7 +9,7 @@ const FormHero = (props) => {
     let { heroHandle } = props
 
     return(
-        <form className="container-column"
+        <form className="form-group"
             onSubmit={(e) => {
             e.preventDefault();
             if(name){
@@ -19,12 +19,9 @@ const FormHero = (props) => {
             }
             
         }}>
-            <div>
-                <img src={search_vermelho} alt="barra de busca" />
-            </div>
             <label htmlFor=""><img src={ic_busca} alt="" /></label>
             <input type="text" 
-            placeholder="procure por heróisi" 
+            placeholder="procure por herói" 
             value={name}
             onChange={(e) => {
                 setName(e.target.value);
