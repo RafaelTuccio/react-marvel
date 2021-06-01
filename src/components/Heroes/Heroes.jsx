@@ -23,7 +23,7 @@ const Heroes = (props) => {
     })
 
     return(
-        <section className="card-container">
+        <section className="card-container heroes">
             {
                 heroes.map((hero) => {
                     return <HeroCard key={hero.id} hero={hero} favorito={favorito} favoritar={favoritar}/>

@@ -1,14 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import FormHero from "../../components/FormHero.jsx/FormHero";
 import HomeHeader from "../../components/Headers/HomeHeader";
 import Filter from "../../components/Filtros/Filtro";
 import Heroes from  "../../components/Heroes/Heroes";
-import { getHeroes, getHeroesFavoritos } from "../../service/apiService";
+import { getHeroes } from "../../service/apiService";
+import { FavoritoContext } from "../../service/useFavorito";
+import Footer from "../../components/Footer/Fotter";
 const Home = () => {
     let [heroes, setHeroes] = useState([])
     let [favorito, setFavorito] = useState(false);
     let [order, setOrder] = useState(false)
-    
+    let { getFavoritos } = useContext(FavoritoContext);
 
     const getOrder = () => {
         if(order){
@@ -33,8 +35,8 @@ const Home = () => {
             }).catch(err => console.error(err))
         }else{
             setFavorito(true);
-            let result = getHeroesFavoritos()
-            //setHeroes(result)
+            let result = getFavoritos();
+            setHeroes(result)
         }
     }
 
@@ -46,11 +48,13 @@ const Home = () => {
     },[])
 
     return (
-        <div className>
+        <div>
             <HomeHeader />
             <FormHero />
-            <Filter order={order} getOrder={getOrder} favorito={favorito} showFavorito={showFavorito}/>
-            <Heroes heroes={heroes}/>
+            <div>
+                <Filter order={order} getOrder={getOrder} favorito={favorito} showFavorito={showFavorito}/>
+                <Heroes heroes={heroes}/>
+            </div>
         </div>
     );
 }

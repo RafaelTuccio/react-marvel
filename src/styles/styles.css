@@ -1,18 +1,33 @@
-body{
-    margin: 0;
-    padding: 0;
-}
+/* 
 
 .container{
     width: 90%;
     margin: 10px 5% 0 5%;
-    display: flex;
-    justify-content: center;
 }
 
 
-.error{
-    color: red
+
+
+
+
+
+
+*/
+
+.container-home{
+    width: 90%;
+    margin: 10px 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .filter{
@@ -21,24 +36,33 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+
+    box-sizing: border-box;
 }
 
-.filter-order{
+.filter-control{
+    width: 50%;
     display: flex;
-    align-items: center;
-    margin: 0 10px;
-    color: red
+    justify-content: space-between;
 }
 .filter-favorito{
     display: flex;
     align-items: center;
-    margin: 0 10px;
     color: red
 }
 
-.order-favorito{
-    display: flex;
+.container{
+    width: 70%;
+    margin: 10px 15% 0 15%;
     
+}
+
+.heroes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card-hero{
@@ -49,26 +73,17 @@ body{
     box-sizing: border-box;
 }
 
-.card-legend{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.card-img{
-    background-color: teal;
-    border-bottom: 3px solid red;
-    
-}
-
 footer{
     width: 100%;
     height: 80px;
     background-color: red;
+} 
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.error{
+    color: red
 }

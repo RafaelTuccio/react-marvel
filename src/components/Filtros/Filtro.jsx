@@ -11,8 +11,10 @@ const Filter = (props) => {
 
     return(
         <div className="filter">
-            <Pagination />
-            <div className="order-favorito">
+            <div className="filter-control">
+                <Pagination />
+            </div>
+            <div className="filter-control">
                 <OrderbyAlph order={order} getOrder={getOrder}/>
                 <Favorito favorito={favorito} showFavorito={showFavorito} />
             </div>

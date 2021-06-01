@@ -27,9 +27,13 @@ export const FavoritoProvider = (props) => {
             localStorage.setItem("listFavoritos", JSON.stringify(listFavoritos));
         }
     }
+
+    const getFavoritos = () => {
+        return favoritos;
+    }
     
     return(
-        <FavoritoContext.Provider value={{favoritos, setFavoritos, saveFavoritos}}>
+        <FavoritoContext.Provider value={{favoritos, setFavoritos, saveFavoritos, getFavoritos}}>
             {
                 props.children
             }

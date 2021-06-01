@@ -9,7 +9,8 @@ const FormHero = () => {
     let [error, setError] = useState("")
 
     return(
-        <form onSubmit={(e) => {
+        <form className="container-column"
+            onSubmit={(e) => {
             e.preventDefault();
             if(name){
                 getHeroByName({name});
