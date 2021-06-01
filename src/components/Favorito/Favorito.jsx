@@ -1,8 +1,7 @@
 import favoritoOff from "../assets/favorito_02.svg";
 import favoritoOn from "../assets/favorito_01.svg";
-import { useContext, useState } from "react";
-import { setHeroesFavoritos } from "../../service/apiService";
-import { FavoritoContext } from "../../service/useFavorito";
+import { useState } from "react";
+
 const Favorito = (props) => {
     let { hero, favoritar } = props
     let [favorito, setFavorito] = useState(false)

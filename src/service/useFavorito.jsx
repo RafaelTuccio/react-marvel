@@ -3,6 +3,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 export const FavoritoContext = createContext({});
 
 export const FavoritoProvider = (props) => {
+    let [fav, setFav] = useState(false);
     let [favoritos, setFavoritos] = useState([]);
 
     
@@ -10,23 +11,38 @@ export const FavoritoProvider = (props) => {
         setFavoritos(JSON.parse(localStorage.getItem("listFavoritos")));
     }, [])
 
+    const compareFavoritos = (list, id) => {
+        for(let i = 0; i < list.length; i++){
+            if(list[i].id === id){
+                setFav(true)
+                return {
+                    index: i,
+                    exist: true,
+                }
+            }
+        }
+        setFav(false)
+        return {
+            index: false,
+            exist: false    }
+    }
+
     const saveFavoritos = (hero) => {
-        console.log(hero.id);
         let listFavoritos = JSON.parse(localStorage.getItem("listFavoritos")) || [];
-        let index = listFavoritos.indexOf(hero.id);
-        if(index === -1){
-            console.log("diferente")
-            if(listFavoritos.length < 5){
-                console.log("tem menos que 5")
-                listFavoritos.push(hero.id);
+        let result = compareFavoritos(listFavoritos, hero.id);
+        console.log(result)
+        if(!result.exist){
+            if(listFavoritos.length < 5) {
+                listFavoritos.push(hero);
                 localStorage.setItem("listFavoritos", JSON.stringify(listFavoritos));
-            }    
+            }
         }else{
-            console.log("ja tem o item");
-            listFavoritos.splice(index, 1);
+            listFavoritos.splice(result.index, 1);
             localStorage.setItem("listFavoritos", JSON.stringify(listFavoritos));
         }
+
     }
+
 
     const getFavoritos = () => {
         return favoritos;
@@ -40,3 +56,5 @@ export const FavoritoProvider = (props) => {
         </FavoritoContext.Provider>
     )
 }
+
+export const useFavorito = () => useContext(FavoritoContext);

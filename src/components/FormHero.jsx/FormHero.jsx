@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { getHeroByName } from "../../service/apiService";
 import ic_busca from "../assets/ic_busca.svg";
 import search_vermelho from "../assets/search_bar_vermelho.svg";
 

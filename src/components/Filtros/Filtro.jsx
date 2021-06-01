@@ -2,7 +2,7 @@
 import Favorito from "./Favorito";
 import OrderbyAlph from "./Order";
 import Pagination from "./Pagination";
-import { getHeroesFavoritos } from "../../service/apiService";
+
 
 const Filter = (props) => {
     let { favorito, order, getOrder, showFavorito} = props

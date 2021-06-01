@@ -4,13 +4,13 @@ import HomeHeader from "../../components/Headers/HomeHeader";
 import Filter from "../../components/Filtros/Filtro";
 import Heroes from  "../../components/Heroes/Heroes";
 import { getHeroes } from "../../service/apiService";
-import { FavoritoContext } from "../../service/useFavorito";
-import Footer from "../../components/Footer/Fotter";
+import {useFavorito } from "../../service/useFavorito";
+
 const Home = () => {
     let [heroes, setHeroes] = useState([])
     let [favorito, setFavorito] = useState(false);
     let [order, setOrder] = useState(false)
-    let { getFavoritos } = useContext(FavoritoContext);
+    let { getFavoritos } = useFavorito();
 
     const getOrder = () => {
         if(order){
