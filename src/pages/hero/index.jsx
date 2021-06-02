@@ -5,26 +5,37 @@ import ComicCard from "../../components/Cards/ComicCard";
 import Comics from "../../components/Comics/Comics";
 import { useEffect, useState } from "react";
 import { getHeroByName } from "../../service/apiService";
-import FormHero from "../../components/FormHero.jsx/FormHome";
+import FormHero from "../../components/FormHero.jsx/FormHero";
 import HeroImg from "../../components/Heroes/HeroImg";
 
 const Hero = () => {
     
     let [hero, setHero] = useState([])
     let [comics, setComcis] = useState([])
+    let [img, setImg] = useState("")
+    let [extension, setExtension] = (useState(""))
     
     const heroHandle = (name) => {
         getHeroByName(name).then(result => {
             setComcis(result.comics)
             setHero(result.hero)
-            console.log(hero)
+            setImg(result.hero.thumbnail.path);
+            setExtension("."+ result.hero.thumbnail.extension)
         }
         
         ).catch(err => console.error(err))
     }
-    console.log(hero.thumbnail)
     
     
+    useEffect(() => {
+        let name = "spider-man"
+        getHeroByName({name}).then(result => {
+                     setComcis(result.comics)
+                     setHero(result.hero)
+                     setImg(result.hero.thumbnail.path);
+            setExtension("."+ result.hero.thumbnail.extension)
+        })
+    },[])
     
     return(
         <div>
@@ -34,11 +45,7 @@ const Hero = () => {
                 <div className="hero-container">
                     <div className="hero-main">
                         <HeroData hero={hero}/>
-                        {
-                            hero === true?
-                            <HeroImg hero={hero}/>
-                            : <div></div>
-                        }
+                        <HeroImg img={img} extension={extension}/>
                     </div>
                     <span className="section-titulo">Últimos lançamentos</span>
                     <Comics comics={comics}/>

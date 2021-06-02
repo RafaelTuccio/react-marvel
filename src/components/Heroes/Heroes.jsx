@@ -7,15 +7,19 @@ const Heroes = (props) => {
     let { heroes } = props
     let [favorito, setFavorito] = useState(false)
     let { saveFavoritos } = useFavorito()
-    let { favoritos } = useFavorito()
-    let [count, setCount] = useState(0)
+    let { favoritos, count, setCount, retorno } = useFavorito()
     
+    
+   
+
     
 
     const favoritar = (hero) => {
-        //console.log("favoritei: ", id)
-        saveFavoritos(hero)
+        let result = saveFavoritos(hero)
+        setCount(result)
+        console.log("retorno do salvar",result)
     }
+    
 
     const compareFavoritos = (list, id) => {
         for(let i = 0; i < list.length; i++){
@@ -25,23 +29,24 @@ const Heroes = (props) => {
         }
         return false
     }
-    // const inicializaCount = (lista) => {
-    //     if(lista.length !== 0){
-    //         setCount(lista.length - 5)
-    //     }
-    // }
+   
     
     useEffect(() => {
-        //inicializaCount(favoritos)
-        console.log("vindo do heroes", count)
-    }, [count])
+        setCount(retorno);
+       console.log("aqui",count)
+    }, [])
 
     return(
         <section className="sessao-herois">
             {
                 heroes.map((hero, index) => {
                    
-                    return <HeroCard key={hero.id} hero={hero} index={index} count={count} setCount={setCount} compareFavoritos={compareFavoritos} favoritar={favoritar}/>
+                    return <HeroCard key={hero.id} 
+                    hero={hero} index={index} 
+                    count={count} setCount={setCount} 
+                    compareFavoritos={compareFavoritos} 
+                    favoritar={favoritar}
+                    />
                 })
             }
         </section>

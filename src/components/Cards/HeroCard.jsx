@@ -11,14 +11,13 @@ const HeroCard = (props) => {
     let [favorito, setFavorito] = useState(false);
     let {favoritos } = useFavorito()
     let tamanho = "/standard_fantastic.";
-   
-
     
 
     useEffect(() => {
        
         if(favoritos){
             setFavorito(compareFavoritos(favoritos, hero.id))
+            setCount(favoritos.length);
             
         }
         
@@ -36,21 +35,19 @@ const HeroCard = (props) => {
                 <span>{hero.name}</span>
                 <div onClick={() => {
                     favoritar(hero);
+                    //favo(hero.id)
+                    //setCount(JSON.parse(localStorage.getItem("count")));
                     if(!favorito && count < 5){
                         setFavorito(true)
-                        if(count < 5){
-                            setCount(count + 1)
-                        }
-                        localStorage.setItem("count", JSON.stringify(count))
+                        // setCount(count + 1)
+                        // localStorage.setItem("count", JSON.stringify(count))
                         //setCount(count - 1)
                       
                     }
-                    else{
+                    if(favorito){
                         setFavorito(false)
-                        localStorage.setItem("count", JSON.stringify(count))
-                        if(count > 0){
-                            setCount(count - 1)
-                        }
+                        // setCount(count - 1)
+                        // localStorage.setItem("count", JSON.stringify(count))
                     }
                 }}>
                         {

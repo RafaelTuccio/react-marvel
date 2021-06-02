@@ -10,7 +10,7 @@ const Home = () => {
     let [heroes, setHeroes] = useState([])
     let [favorito, setFavorito] = useState(false);
     let [filtro, setFiltro] = useState(false)
-    let { getFavoritos } = useFavorito();
+    let { getFavoritos, count, setCount, retorno } = useFavorito();
 
     const getFiltro = () => {
         if(filtro){
@@ -43,6 +43,8 @@ const Home = () => {
     useEffect(() => {
         getHeroes().then(result => {
             setHeroes(result)
+            // retorno();
+            // console.log("retorno no index", count)
         })
         
     },[])

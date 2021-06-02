@@ -1,9 +1,15 @@
+import { useEffect, useState } from "react";
+
 const HeroImg = (props) => {
-    let { hero } = props
+    let { img, extension } = props
+
+
+
+
     return(
         <div className="img-hero">
             
-                <img src={hero.thumbnail.path +"."+ hero.thumbnail.extension} alt=""/>
+                <img src={img + extension} alt=""/>
                
           
         </div>

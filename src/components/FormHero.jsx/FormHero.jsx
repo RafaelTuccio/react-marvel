@@ -1,3 +1,6 @@
+import { useState } from 'react'
+import ic_busca from '../assets/ic_busca.svg'
+
 const FormHero = (props) => {
     let [name, setName] = useState("")
     let {heroHandle} = props
@@ -12,10 +15,10 @@ const FormHero = (props) => {
                 value={name}
                 onChange={(e) =>{
                     setName(e.target.value)
-                    heroHandle({name})
+                    heroHandle("hulk")
                 }}
             />
-            <img src="assets/ic_busca.svg" alt="icone de lupa" />
+            <img src={ic_busca} alt="icone de lupa" />
         </form>
     );
 }
