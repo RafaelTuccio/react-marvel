@@ -1,18 +1,15 @@
 import HeroHeader from "../../components/Headers/HeroHeader";
-import DescriptionCard from "../../components/Cards/DescriptionCard";
+import HeroData from "../../components/Cards/HeroData";
 import ComicMovie from "../../components/Cards/ComicMovie";
 import ComicCard from "../../components/Cards/ComicCard";
 import Comics from "../../components/Comics/Comics";
 import { useEffect, useState } from "react";
 import { getHeroByName } from "../../service/apiService";
+import FormHero from "../../components/FormHero.jsx/FormHome";
+import HeroImg from "../../components/Heroes/HeroImg";
 
 const Hero = () => {
-    // let hero = {
-    //     name: "",
-    //     thumbnail: {
-    //         path: ""
-    //     }
-    //}
+    
     let [hero, setHero] = useState([])
     let [comics, setComcis] = useState([])
     
@@ -20,6 +17,7 @@ const Hero = () => {
         getHeroByName(name).then(result => {
             setComcis(result.comics)
             setHero(result.hero)
+            console.log(hero)
         }
         
         ).catch(err => console.error(err))
@@ -32,15 +30,20 @@ const Hero = () => {
         <div>
             <HeroHeader heroHandle={heroHandle}/>
             <div>
-                <div>
-                    <DescriptionCard hero={hero}/>
-                    <ComicMovie />
-                </div>
-                <div>
-                    {/* <img src={`${hero.thumbnail.path}.${hero.thumbnail.extension}`} alt="foto heroi" /> */}
+                <FormHero heroHandle={heroHandle}/>
+                <div className="hero-container">
+                    <div className="hero-main">
+                        <HeroData hero={hero}/>
+                        {
+                            hero === true?
+                            <HeroImg hero={hero}/>
+                            : <div></div>
+                        }
+                    </div>
+                    <span className="section-titulo">Últimos lançamentos</span>
+                    <Comics comics={comics}/>
                 </div>
             </div>
-            <Comics comics={comics}/>
         </div>
     );
 }

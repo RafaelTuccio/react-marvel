@@ -3,9 +3,8 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 export const FavoritoContext = createContext({});
 
 export const FavoritoProvider = (props) => {
-    let [fav, setFav] = useState(false);
     let [favoritos, setFavoritos] = useState([]);
-
+    
     
     useEffect(() => {
         setFavoritos(JSON.parse(localStorage.getItem("listFavoritos")));
@@ -14,14 +13,13 @@ export const FavoritoProvider = (props) => {
     const compareFavoritos = (list, id) => {
         for(let i = 0; i < list.length; i++){
             if(list[i].id === id){
-                setFav(true)
+                
                 return {
                     index: i,
                     exist: true,
                 }
             }
         }
-        setFav(false)
         return {
             index: false,
             exist: false    }
@@ -35,10 +33,13 @@ export const FavoritoProvider = (props) => {
             if(listFavoritos.length < 5) {
                 listFavoritos.push(hero);
                 localStorage.setItem("listFavoritos", JSON.stringify(listFavoritos));
+                
+
             }
         }else{
             listFavoritos.splice(result.index, 1);
             localStorage.setItem("listFavoritos", JSON.stringify(listFavoritos));
+           
         }
 
     }

@@ -1,13 +1,11 @@
-
 import logo_menor from "../assets/logo_menor.svg";
-import FormHero from "../FormHero.jsx/FormHero";
 
-const HeroHeader = (props) => {
-    let { heroHandle } = props
+
+const HeroHeader = () => {
+    
     return(
-        <header>
+        <header className="hero-header">
             <img src={logo_menor} alt="" />
-            <FormHero heroHandle={heroHandle}/>
         </header>
     );
 }

@@ -1,13 +1,17 @@
 const ComicCard = (props) => {
-    let { comic } = props
-    let tamanho = "/portrait_incredible."
+    let { comic } = props;
+    let tamanho = "/portrait_incredible.";
 
     return(
-        <div>
-            <img src={comic.thumbnail.path + tamanho + comic.thumbnail.extension} alt="quadrinhos de superheróis" />
+        <div className="comic-card">
+            <div className="comic-img">
+                <img src={comic.thumbnail.path + tamanho + comic.thumbnail.extension} alt="quadrinhos de superheróis" />    
+            </div>
+            <div className="comic-footer">
             <span><strong>{comic.title}</strong></span>
+            </div>
         </div>
-    )
+    );
 }
 
 export default ComicCard;

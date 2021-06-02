@@ -1,18 +1,15 @@
 import ComicCard from "../Cards/ComicCard";
 
 const Comics = (props) => {
-    let { comics } = props
+    let { comics } = props;
     return (
-        <section>
-            <div>
-                <h1>Últimos lançamentos</h1>
-            </div>
+        <div className="hero-section">
             {
                 comics.map((comic) => {
                     return <ComicCard comic={comic}/>
                 })
             }
-        </section>
+        </div>
     );
 }
 

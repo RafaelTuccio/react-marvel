@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import FormHero from "../../components/FormHero.jsx/FormHero";
+import FormHero from "../../components/FormHero.jsx/FormHome";
 import HomeHeader from "../../components/Headers/HomeHeader";
 import Filter from "../../components/Filtros/FiltroSection";
 import Heroes from  "../../components/Heroes/Heroes";

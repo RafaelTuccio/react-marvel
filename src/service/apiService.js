@@ -33,9 +33,7 @@ export const getHeroByName = async ({name}) =>{
         let hero = await axios.get(url + "name=" + name + ts + apikey + hash);
         let id = hero.data.data.results[0].id
         let urlComic = `https://gateway.marvel.com:443/v1/public/characters/${id}/comics?limit=10&orderBy=-onsaleDate&ts=1622054338&apikey=924ede14a9e9d54b76b557eb701ddf4c&hash=0ddec45d15e5daf65919c9ef98e48a06`
-        //let urlComic = `https://gateway.marvel.com:443/v1/public/characters/${id}/comics?limit=100&offset=1672&orderBy=onsaleDate&ts=1622054338&apikey=924ede14a9e9d54b76b557eb701ddf4c&hash=0ddec45d15e5daf65919c9ef98e48a06`
         let comics = await axios.get(urlComic)
-        //console.log(id)
         console.log(hero.data.data.results[0], comics.data.data.results)
         return {hero: hero.data.data.results[0], comics: comics.data.data.results}
     }catch(erro){
@@ -62,9 +60,6 @@ export const getComic = async () => {
         let orderBy = "onSaleDate";
         let limit = 10;
         let comics = await axios.get(urlBase)
-        // console.log("********************")
-        // console.log(comics)
-        // console.log("********************")
         return comics.data.data;
     }catch(err){
         console.error(err)
