@@ -1,7 +1,7 @@
 import HeroHeader from "../../components/Headers/HeroHeader";
 import HeroData from "../../components/Cards/HeroData";
 import ComicMovie from "../../components/Cards/ComicMovie";
-import ComicCard from "../../components/Cards/ComicCard";
+import ComicCard from "../../components/Cards/ComicCard/ComicCard";
 import Comics from "../../components/Comics/Comics";
 import { useState } from "react";
 import { getHeroByName } from "../../service/apiService";

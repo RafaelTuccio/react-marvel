@@ -5,7 +5,7 @@ const ComicCard = (props) => {
     return(
         <div className="comic-card">
             <div className="comic-img">
-                <img src={comic.thumbnail.path + tamanho + comic.thumbnail.extension} alt="quadrinhos de superheróis" />    
+                <img src={comic.thumbnail.path + tamanho + comic.thumbnail.extension} alt={comic.title} />    
             </div>
             <div className="comic-footer">
             <span><strong>{comic.title}</strong></span>
