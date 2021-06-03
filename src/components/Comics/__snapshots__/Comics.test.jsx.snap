@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Comics /> deve dar match com o snapshot 1`] = `
+<div
+  class="hero-section"
+>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Immortal Hulk (2018) #43"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/9/a0/6009e1e7e7ad7/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Immortal Hulk (2018) #43
+        </strong>
+      </span>
+    </div>
+  </div>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Maestro: Symphony In A Gamma Key (Trade Paperback)"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/7/00/6035276f96cfd/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Maestro: Symphony In A Gamma Key (Trade Paperback)
+        </strong>
+      </span>
+    </div>
+  </div>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Immortal Hulk (2018) #45"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/6/50/605cee09c6523/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Immortal Hulk (2018) #45
+        </strong>
+      </span>
+    </div>
+  </div>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Immortal Hulk by Alex Ross Poster Book (2021)"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/3/70/6079a1b170d79/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Immortal Hulk by Alex Ross Poster Book (2021)
+        </strong>
+      </span>
+    </div>
+  </div>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Immortal Hulk Vol. 3 (Hardcover)"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/3/c0/6082f91d6921e/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Immortal Hulk Vol. 3 (Hardcover)
+        </strong>
+      </span>
+    </div>
+  </div>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Immortal Hulk (2018) #46"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/8/f0/608990cbba22b/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Immortal Hulk (2018) #46
+        </strong>
+      </span>
+    </div>
+  </div>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Heroes Reborn (2021) #2"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/d/80/6087319c52146/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Heroes Reborn (2021) #2
+        </strong>
+      </span>
+    </div>
+  </div>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Immortal Hulk: Time of Monsters (2021) #1"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/9/60/60afe32e48c82/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Immortal Hulk: Time of Monsters (2021) #1
+        </strong>
+      </span>
+    </div>
+  </div>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Free Comic Book Day: Avengers/Hulk (2021) #1"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/e/b0/60b7b325eadda/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Free Comic Book Day: Avengers/Hulk (2021) #1
+        </strong>
+      </span>
+    </div>
+  </div>
+  <div
+    class="comic-card"
+  >
+    <div
+      class="comic-img"
+    >
+      <img
+        alt="Incredible Hulks (2010) #604 (DJURDJEVIC 70TH ANNIVERSARY VARIANT)"
+        src="http://i.annihil.us/u/prod/marvel/i/mg/b/d0/4badb223f33c9/portrait_incredible.jpg"
+      />
+    </div>
+    <div
+      class="comic-footer"
+    >
+      <span>
+        <strong>
+          Incredible Hulks (2010) #604 (DJURDJEVIC 70TH ANNIVERSARY VARIANT)
+        </strong>
+      </span>
+    </div>
+  </div>
+</div>
+`;

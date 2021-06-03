@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeroImg /> deve dar match com o snapshot 1`] = `
+<div
+  class="img-hero"
+>
+  <img
+    alt="Hulk"
+    src="http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0jpg"
+  />
+</div>
+`;

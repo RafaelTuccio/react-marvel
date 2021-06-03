@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const HeroImg = (props) => {
-    let { img, extension } = props
+    let { img, extension, title } = props
 
 
 
@@ -9,7 +9,7 @@ const HeroImg = (props) => {
     return(
         <div className="img-hero">
             
-                <img src={img + extension} alt=""/>
+                <img src={img + extension} alt={title}/>
                
           
         </div>

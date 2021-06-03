@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ic_busca from "../assets/ic_busca.svg";
-import search_vermelho from "../assets/search_bar_vermelho.svg";
+import ic_busca from "../../assets/ic_busca.svg";
+
 
 
 const FormHero = (props) => {
@@ -21,7 +21,7 @@ const FormHero = (props) => {
         }}>
             <label htmlFor=""><img src={ic_busca} alt="" /></label>
             <input type="text" 
-            placeholder="procure por herói" 
+            placeholder="Procure por um herói" 
             value={name}
             onChange={(e) => {
                 setName(e.target.value);

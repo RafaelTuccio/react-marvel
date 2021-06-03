@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormHome /> deve dar match com o snapshot 1`] = `
+<form
+  class="form-hero"
+>
+  <input
+    placeholder="Procure por um herói"
+    type="text"
+    value=""
+  />
+  <img
+    alt="icone de lupa"
+    src="ic_busca.svg"
+  />
+</form>
+`;

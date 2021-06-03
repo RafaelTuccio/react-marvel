@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeHeader /> deve dar match com o snapshot 1`] = `
+<header
+  class="header-home"
+>
+  <div
+    class="logo-maior"
+  >
+    <img
+      alt="logo marvel"
+      src="logo.svg"
+    />
+    <h1>
+      EXPORE O UNIVERSO
+    </h1>
+    <span
+      class="header-subtitulo"
+    >
+      Mergulhe no domínio deslumbrante de todos os personagens clássicos que você ama - e aqueles que você descobrirá em breve!
+    </span>
+  </div>
+</header>
+`;

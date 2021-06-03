@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeroHeader /> deve dar match com o snapshot 1`] = `
+<header
+  class="hero-header"
+>
+  <img
+    alt="logo marvel"
+    src="logo_menor.svg"
+  />
+</header>
+`;

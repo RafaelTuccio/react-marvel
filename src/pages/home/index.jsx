@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
-import FormHero from "../../components/FormHero.jsx/FormHome";
-import HomeHeader from "../../components/Headers/HomeHeader";
+import FormHome from '../../components/Home/Form/FormHome';
+import HomeHeader from "../../components/Home/Header/HomeHeader";
 import Filter from "../../components/Filtros/FiltroSection";
 import Heroes from  "../../components/Heroes/Heroes";
 import { getHeroes } from "../../service/apiService";
@@ -52,7 +52,7 @@ const Home = () => {
         <div>
             <HomeHeader />
             <div className="container-home">
-                <FormHero />
+                <FormHome />
                 <Filter filtro={filtro} getFiltro={getFiltro} favorito={favorito} showFavorito={showFavorito}/>
                 <Heroes heroes={heroes}/>
             </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import ic_busca from '../assets/ic_busca.svg'
+
+import ic_busca from '../../assets/ic_busca.svg'
 
 const FormHero = (props) => {
     let [name, setName] = useState("")
