@@ -1,4 +1,4 @@
-import ComicCard from "../Cards/ComicCard/ComicCard";
+import ComicCard from "../ComicCard/ComicCard";
 
 const Comics = ({comics}) => {
     return (

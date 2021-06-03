@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Comics from './Comics';
 
-import { comicMock } from '../../pages/hero/mockComic';
+import { comicMock } from '../../../pages/hero/mockComic';
 
 const comics = comicMock;
 

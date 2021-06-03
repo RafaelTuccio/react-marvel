@@ -1,8 +1,8 @@
-import favoritoOff from '../assets/favorito_02.svg'
-import favoritoOn from '../assets/favorito_01.svg'
-import ic_quadrinhos from '../assets/ic_quadrinhos.svg'
-import ic_trailer from '../assets/ic_trailer.svg'
-import avaliacao_on from '../assets/avaliacao_on.svg'
+import favoritoOff from '../../assets/favorito_02.svg'
+import favoritoOn from '../../assets/favorito_01.svg'
+import ic_quadrinhos from '../../assets/ic_quadrinhos.svg'
+import ic_trailer from '../../assets/ic_trailer.svg'
+import avaliacao_on from '../../assets/avaliacao_on.svg'
 
 const HeroData = (props) => {
     let { hero } = props;

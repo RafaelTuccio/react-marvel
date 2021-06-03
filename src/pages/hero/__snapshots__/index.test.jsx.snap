@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero /> deve dar match com o snapshot 1`] = `
+<div>
+  <header
+    class="hero-header"
+  >
+    <img
+      alt="logo marvel"
+      src="logo_menor.svg"
+    />
+  </header>
+  <div>
+    <form
+      class="form-hero"
+    >
+      <input
+        placeholder="Procure por um herói"
+        type="text"
+        value=""
+      />
+      <img
+        alt="icone de lupa"
+        src="ic_busca.svg"
+      />
+    </form>
+    <div
+      class="hero-container"
+    >
+      <div
+        class="hero-main"
+      >
+        <div
+          class="hero-dados"
+        >
+          <div
+            class="card-dados"
+          >
+            <div
+              class="hero-titulo"
+            >
+              <h1 />
+              <img
+                alt="icone coracao"
+                src="favorito_01.svg"
+              />
+            </div>
+            <div
+              class="descricao"
+            >
+              <p />
+            </div>
+          </div>
+          <div
+            class="afins"
+          >
+            <div
+              class="quadrinhos"
+            >
+              <span>
+                Quadrinhos
+              </span>
+              <div>
+                <img
+                  alt="icone quadrinhos"
+                  src="ic_quadrinhos.svg"
+                />
+                <span>
+                  3000
+                </span>
+              </div>
+            </div>
+            <div
+              class="filmes"
+            >
+              <span>
+                Filmes
+              </span>
+              <div>
+                <img
+                  alt=""
+                  src="ic_trailer.svg"
+                />
+                <span>
+                  40
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rating"
+          >
+            <span>
+              <strong>
+                Rating
+              </strong>
+            </span>
+            <img
+              alt="icone estrela"
+              src="avaliacao_on.svg"
+            />
+          </div>
+          <div
+            class="ultimo-lancamento"
+          >
+            <span>
+              <strong>
+                Último quadrinho: 
+              </strong>
+            </span>
+            <span>
+              13 fev 2020
+            </span>
+          </div>
+        </div>
+        <div
+          class="img-hero"
+        >
+          <img
+            src=""
+          />
+        </div>
+      </div>
+      <span
+        class="section-titulo"
+      >
+        Últimos lançamentos
+      </span>
+      <div
+        class="hero-section"
+      />
+    </div>
+  </div>
+</div>
+`;

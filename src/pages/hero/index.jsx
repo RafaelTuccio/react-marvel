@@ -1,13 +1,11 @@
-import HeroHeader from "../../components/Hero/Header/HeroHeader";
-import HeroData from "../../components/Cards/HeroData";
-//import ComicMovie from "../../components/Cards/ComicMovie";
-//import ComicCard from "../../components/Cards/ComicCard/ComicCard";
-import Comics from "../../components/Comics/Comics";
 import { useState } from "react";
 import { getHeroByName } from "../../service/apiService";
+import HeroHeader from "../../components/Hero/Header/HeroHeader";
+import HeroData from "../../components/Hero/Cards/HeroData";
+import Comics from "../../components/Hero/Comics/Comics";
 import FormHero from "../../components/Hero/Form/FormHero";
 import HeroImg from "../../components/Hero/HeroImage/HeroImg";
-import ErrorComponent from "../../components/Error/ErrorComponent";
+
 
 const Hero = () => {
     
@@ -17,7 +15,7 @@ const Hero = () => {
     let [extension, setExtension] = (useState(""))
     let [error, setError] = useState(false)
     
-    
+
     const heroHandle = (name) => {
         getHeroByName(name).then(result => {
             setComcis(result.comics)
