@@ -19,7 +19,7 @@ const HeroData = (props) => {
                         :<img src={favoritoOff} alt="icone coracao"/>
                     }
                 </div>
-                <div class="descricao">
+                <div className="descricao">
                     <p>{hero.description}</p>
                 </div>
             </div>

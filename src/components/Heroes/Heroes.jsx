@@ -1,18 +1,13 @@
-import { useContext, useEffect, useState } from "react";
-import { FavoritoContext, useFavorito } from "../../service/useFavorito";
+import { useEffect, useState } from "react";
+import { useFavorito } from "../../service/useFavorito";
 import HeroCard from "../Cards/HeroCard";
 
 
 const Heroes = (props) => {
     let { heroes } = props
-    let [favorito, setFavorito] = useState(false)
     let { saveFavoritos } = useFavorito()
-    let { favoritos, count, setCount, retorno } = useFavorito()
-    
-    
-   
-
-    
+    let {  count, setCount, retorno } = useFavorito()
+ 
 
     const favoritar = (hero) => {
         let result = saveFavoritos(hero)

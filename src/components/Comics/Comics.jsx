@@ -1,4 +1,4 @@
-import ComicCard from "../Cards/ComicCard";
+import ComicCard from "../Cards/ComicCard/ComicCard";
 
 const Comics = (props) => {
     let { comics } = props;

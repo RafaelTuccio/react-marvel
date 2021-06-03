@@ -43,8 +43,7 @@ const Home = () => {
     useEffect(() => {
         getHeroes().then(result => {
             setHeroes(result)
-            // retorno();
-            // console.log("retorno no index", count)
+            
         })
         
     },[])

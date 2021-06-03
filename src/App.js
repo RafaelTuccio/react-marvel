@@ -1,7 +1,8 @@
 import "./styles/styles.css";
 import Home from './pages/home/index';
 import Footer from './components/Footer/Fotter';
-import Hero from  "./pages/hero/index";
+import HeroCard from "./components/Cards/HeroCard";
+import Hero from "./pages/hero/index"
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
 
   return (
     <div>
-        <Home />
+        <Home/>
       <Footer />
     </div>
     

@@ -35,19 +35,12 @@ const HeroCard = (props) => {
                 <span>{hero.name}</span>
                 <div onClick={() => {
                     favoritar(hero);
-                    //favo(hero.id)
-                    //setCount(JSON.parse(localStorage.getItem("count")));
                     if(!favorito && count < 5){
                         setFavorito(true)
-                        // setCount(count + 1)
-                        // localStorage.setItem("count", JSON.stringify(count))
-                        //setCount(count - 1)
-                      
+                        
                     }
                     if(favorito){
                         setFavorito(false)
-                        // setCount(count - 1)
-                        // localStorage.setItem("count", JSON.stringify(count))
                     }
                 }}>
                         {

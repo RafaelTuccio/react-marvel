@@ -8,6 +8,7 @@ const FormHero = (props) => {
         <form className="form-hero"
         onSubmit={(e) => {
             e.preventDefault();
+            heroHandle({name})
         }}
         >
             <input type="text" 
@@ -15,7 +16,7 @@ const FormHero = (props) => {
                 value={name}
                 onChange={(e) =>{
                     setName(e.target.value)
-                    heroHandle("hulk")
+                    
                 }}
             />
             <img src={ic_busca} alt="icone de lupa" />

@@ -12,7 +12,7 @@ const Filter = (props) => {
        
             <div className="filtros-paginacao"> 
                 <div className="paginacao">
-                    <span>encontrados 20 heróis</span>
+                    <span>Encontrados 20 heróis</span>
                 </div>
                 <div className="filtros">
                     <img src={ic_heroi} alt="" />

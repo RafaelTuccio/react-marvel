@@ -156,8 +156,9 @@ footer{
 
 
 .hero-container{
-    width: 70%;
-    margin: 0 15%;
+    width: 74%;
+    margin: 0 12%;
+    
 }
 
 .hero-main{
@@ -205,13 +206,14 @@ footer{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    
 }
 
 
 
 .comic-card{
     width: 168px;
-    margin: 20px;
+    margin: 35.2px;
 }
 
 .comic-card:nth-child(6n){
@@ -227,9 +229,11 @@ footer{
 }
 
 
-
-
-
+.img-hero img{
+   display: flex;
+   justify-content: center;
+   width: 900px;
+}
 
 
 
