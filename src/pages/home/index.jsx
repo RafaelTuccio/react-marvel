@@ -49,13 +49,20 @@ const Home = () => {
         
     },[])
 
+    
+    
+
     return (
         <div>
             <HomeHeader />
             <div className="container-home">
                 <FormHome />
                 <Filter filtro={filtro} getFiltro={getFiltro} favorito={favorito} showFavorito={showFavorito}/>
-                <Heroes heroes={heroes}/>
+                {
+                    heroes.length > 0 ?
+                    <Heroes heroes={heroes}/>
+                    : <h1>Loading...</h1>
+                }
             </div>
         </div>
     );
