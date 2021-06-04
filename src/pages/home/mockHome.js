@@ -1,4 +1,4 @@
-export const mockHome = [
+export const mockHome = 
     {
         code: 200,
         status: "Ok",
@@ -212,4 +212,3 @@ export const mockHome = [
             ]
         }
     }
-]

@@ -1,16 +1,17 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import FormHome from '../../components/Home/Form/FormHome';
 import HomeHeader from "../../components/Home/Header/HomeHeader";
-import Filter from "../../components/Filtros/FiltroSection";
-import Heroes from  "../../components/Heroes/Heroes";
+import Filter from "../../components/Home/Filtros/FiltroSection";
+import Heroes from  "../../components/Home/Heroes/Heroes";
 import { getHeroes } from "../../service/apiService";
 import {useFavorito } from "../../service/useFavorito";
+
 
 const Home = () => {
     let [heroes, setHeroes] = useState([])
     let [favorito, setFavorito] = useState(false);
     let [filtro, setFiltro] = useState(false)
-    let { getFavoritos, count, setCount, retorno } = useFavorito();
+    let { getFavoritos} = useFavorito();
 
     const getFiltro = () => {
         if(filtro){

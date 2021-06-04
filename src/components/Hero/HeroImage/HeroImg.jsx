@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 const HeroImg = (props) => {
     let { img, extension, title } = props
 

@@ -1,6 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container-home{
@@ -150,8 +156,8 @@ footer{
 
 .form-hero img{
     position: absolute;
-    top: 5.5%;
-    left: 32%;
+    top: 5.1%;
+    left: 31.3%;
 }
 
 
@@ -235,13 +241,34 @@ footer{
    width: 900px;
 }
 
+.box-error{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.error{
+    color: red;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@keyframes error {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -150px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
 
 
-
-
-
-
-
+.container-error{
+    text-align: center;
+}
 
 
 

@@ -15,4 +15,5 @@ describe("<HeroHeader />", () => {
         const { container } = render(<HeroHeader />);
         expect(container.firstChild).toMatchSnapshot();
     })
+    
 })

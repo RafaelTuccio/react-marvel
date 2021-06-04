@@ -58,7 +58,7 @@ export const FavoritoProvider = (props) => {
     }
     
     return(
-        <FavoritoContext.Provider value={{favoritos, setFavoritos, saveFavoritos, getFavoritos, count, setCount, retorno}}>
+        <FavoritoContext.Provider value={{favoritos, setFavoritos, saveFavoritos, getFavoritos, count, setCount, retorno, compareFavoritos}}>
             {
                 props.children
             }

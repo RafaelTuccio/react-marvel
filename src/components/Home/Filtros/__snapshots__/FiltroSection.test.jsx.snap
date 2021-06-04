@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FiltroSection /> deve dar match com o snapshot 1`] = `
+<div
+  class="filtros-paginacao"
+>
+  <div
+    class="paginacao"
+  >
+    <span>
+      Encontrados 20 heróis
+    </span>
+  </div>
+  <div
+    class="filtros"
+  >
+    <img
+      alt=""
+      src="ic_heroi.svg"
+    />
+    <span
+      class="filtro-span"
+    >
+      Ordernar por nome - A/Z
+    </span>
+    <div>
+      <img
+        alt="botao ligado"
+        src="toggle_on.svg"
+      />
+    </div>
+  </div>
+  <div
+    class="favoritos"
+  >
+    <div>
+      <img
+        alt="coracao vermelho"
+        src="favorito_01.svg"
+      />
+    </div>
+    <span
+      class="favoritos-span"
+    >
+      Somente favoritos
+    </span>
+  </div>
+</div>
+`;

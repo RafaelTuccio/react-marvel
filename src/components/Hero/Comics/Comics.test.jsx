@@ -18,4 +18,5 @@ describe("<Comics />", () => {
         expect(container.firstChild).toMatchSnapshot();
     })
     
+    
 })

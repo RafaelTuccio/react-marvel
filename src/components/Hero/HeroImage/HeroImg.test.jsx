@@ -17,4 +17,5 @@ describe("<HeroImg />", () => {
         const { container } = render(<HeroImg img={img} extension={extension} title={hero.name}/>);
         expect(container.firstChild).toMatchSnapshot();
     })
+    
 })

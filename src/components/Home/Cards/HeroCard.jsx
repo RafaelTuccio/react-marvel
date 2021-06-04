@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import favoritoOff from '../assets/favorito_02.svg';
-import favoritoOn from '../assets/favorito_01.svg';
-import { useFavorito } from "../../service/useFavorito";
+import favoritoOff from '../../assets/favorito_02.svg';
+import favoritoOn from '../../assets/favorito_01.svg';
+import { useFavorito } from "../../../service/useFavorito";
 
 
 
@@ -20,7 +20,6 @@ const HeroCard = (props) => {
             setCount(favoritos.length);
             
         }
-        
         
     },[])
 

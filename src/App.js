@@ -1,16 +1,18 @@
 import "./styles/styles.css";
-import Home from './pages/home/index';
 import Footer from './components/Footer/Fotter';
-import Hero from "./pages/hero/index"
-
+import { Router } from "react-router-dom";
+import history from './history';
+import Routes from './routes';
 
 function App() {
   
 
   return (
     <div>
-        <Home/>
-      <Footer />
+      <Router history={history}>
+        <Routes />
+        <Footer />
+      </Router>
     </div>
     
   );

@@ -18,4 +18,5 @@ describe("<ComicCard />", ()=> {
         const { container } = render(<ComicCard comic={comic} />);
         expect(container.firstChild).toMatchSnapshot();
     })
+    
 })

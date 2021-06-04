@@ -24,6 +24,8 @@ export const getHeroes = async (order) => {
 }
 
 
+
+
 export const getHeroByName = async ({name}) =>{
     try{
         let url = "http://gateway.marvel.com/v1/public/characters?";
@@ -34,7 +36,7 @@ export const getHeroByName = async ({name}) =>{
         let id = hero.data.data.results[0].id
         let urlComic = `https://gateway.marvel.com:443/v1/public/characters/${id}/comics?limit=10&orderBy=-onsaleDate&ts=1622054338&apikey=924ede14a9e9d54b76b557eb701ddf4c&hash=0ddec45d15e5daf65919c9ef98e48a06`
         let comics = await axios.get(urlComic)
-        console.log(hero.data.data.results[0], comics.data.data.results)
+        console.log(hero)
         return {hero: hero.data.data.results[0], comics: comics.data.data.results}
     }catch(erro){
         console.log(erro);
@@ -42,17 +44,7 @@ export const getHeroByName = async ({name}) =>{
     }
 }
 
-export const getHeroesFavoritos = () => {
-    console.log("mostrando todos os favoritos")
-    return ;
-}
 
-
-
-export const removeHeroesFavoritos = () => {
-    console.log("removendo heroi dos favoritos")
-    return;
-}
 
 export const getComic = async () => {
     try{

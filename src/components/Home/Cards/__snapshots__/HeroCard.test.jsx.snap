@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HeroCard /> deve comparar com o snapshot 1`] = `
+<div
+  class="card-heroi"
+>
+  <img
+    alt="foto heroi"
+    src="http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784/standard_fantastic.jpg"
+  />
+  <div
+    class="card-heroi-footer"
+  >
+    <span>
+      3-D Man
+    </span>
+    <div>
+      <img
+        alt="coracao branco"
+        src="favorito_02.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

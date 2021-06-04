@@ -1,8 +1,8 @@
-import ic_heroi from "../assets/ic_heroi.svg"
-import toggleOff from "../assets/toggle_off.svg"
-import toggleOn from "../assets/toggle_on.svg"
-import favoritoOff from "../assets/favorito_02.svg"
-import favoritoOn from "../assets/favorito_01.svg"
+import ic_heroi from "../../assets/ic_heroi.svg"
+import toggleOff from "../../assets/toggle_off.svg"
+import toggleOn from "../../assets/toggle_on.svg"
+import favoritoOff from "../../assets/favorito_02.svg"
+import favoritoOn from "../../assets/favorito_01.svg"
 
 
 const Filter = (props) => {
