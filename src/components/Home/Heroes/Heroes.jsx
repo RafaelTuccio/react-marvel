@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { useFavorito } from "../../../service/useFavorito";
 import HeroCard from "../Cards/HeroCard";
 
@@ -6,7 +6,7 @@ import HeroCard from "../Cards/HeroCard";
 const Heroes = (props) => {
     let { heroes } = props
     let { saveFavoritos } = useFavorito()
-    let { count, setCount, retorno } = useFavorito()
+    let { count, setCount } = useFavorito()
 
 
     const favoritar = (hero) => {
@@ -26,9 +26,6 @@ const Heroes = (props) => {
     }
 
 
-    useEffect(() => {
-        setCount(retorno);
-    }, [])
 
     return (
         <section className="sessao-herois">
