@@ -4,8 +4,8 @@ import axios from "axios";
 export const getHeroes = async (order) => {
     try{
         let url = "http://gateway.marvel.com/v1/public/characters?";
-        let limit = "limit=1";
-        let offset = "&offset=1";
+        //let limit = "limit=1";
+        //let offset = "&offset=1";
         let orderBy = "&orderBy=-name";
         let ts = "&ts=1622054338";
         let apikey = "&apikey=924ede14a9e9d54b76b557eb701ddf4c";
@@ -46,14 +46,3 @@ export const getHeroByName = async ({name}) =>{
 
 
 
-export const getComic = async () => {
-    try{
-        let urlBase = "https://gateway.marvel.com:443/v1/public/characters/1009351/comics?limit=10&orderBy=-onsaleDate&ts=1622054338&apikey=924ede14a9e9d54b76b557eb701ddf4c&hash=0ddec45d15e5daf65919c9ef98e48a06"
-        let orderBy = "onSaleDate";
-        let limit = 10;
-        let comics = await axios.get(urlBase)
-        return comics.data.data;
-    }catch(err){
-        console.error(err)
-    }
-}

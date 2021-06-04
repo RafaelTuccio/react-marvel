@@ -1,5 +1,5 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import { getHeroByName, getComic } from "./apiService";
+import { createContext, useContext, useState } from "react";
+import { getHeroByName } from "./apiService";
 import history from '../history';
 export const HeroContext = createContext({})
 

@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import {useHero} from '../../service/useHero';
 import ErrorComponent from './ErrorComponent';
 

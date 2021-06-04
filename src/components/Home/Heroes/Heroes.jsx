@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useFavorito } from "../../../service/useFavorito";
 import HeroCard from "../Cards/HeroCard";
 

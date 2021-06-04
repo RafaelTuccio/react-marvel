@@ -21,7 +21,7 @@ const HeroCard = (props) => {
             
         }
         
-    },[])
+    },[compareFavoritos, favoritos, setCount, hero.id])
 
    
     
