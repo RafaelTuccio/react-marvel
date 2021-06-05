@@ -4,8 +4,6 @@ import axios from "axios";
 export const getHeroes = async (order) => {
     try{
         let url = "http://gateway.marvel.com/v1/public/characters?";
-        //let limit = "limit=1";
-        //let offset = "&offset=1";
         let orderBy = "&orderBy=-name";
         let ts = "&ts=1622054338";
         let apikey = "&apikey=924ede14a9e9d54b76b557eb701ddf4c";

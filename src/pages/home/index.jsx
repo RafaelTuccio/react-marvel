@@ -11,8 +11,7 @@ const Home = () => {
     let [heroes, setHeroes] = useState([])
     let [favorito, setFavorito] = useState(false);
     let [filtro, setFiltro] = useState(false)
-    let { getFavoritos } = useFavorito();
-    let [load, setLoad] = useState(true);
+    let { getFavoritos} = useFavorito();
 
     const getFiltro = () => {
         if(filtro){
@@ -45,7 +44,7 @@ const Home = () => {
     useEffect(() => {
         getHeroes().then(result => {
             setHeroes(result)
-            setLoad(false)
+            
         })
         
     },[])
@@ -59,11 +58,7 @@ const Home = () => {
             <div className="container-home">
                 <FormHome />
                 <Filter filtro={filtro} getFiltro={getFiltro} favorito={favorito} showFavorito={showFavorito}/>
-                {
-                    load === true ?
-                    <Heroes heroes={heroes}/>
-                    : <h1>Loading...</h1>
-                }
+                <Heroes heroes={heroes}/>
             </div>
         </div>
     );
