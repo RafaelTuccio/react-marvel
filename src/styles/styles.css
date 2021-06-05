@@ -254,16 +254,6 @@ footer{
     margin-bottom: 30px;
 }
 
-@keyframes error {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -150px, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
 
 
 .container-error{
@@ -272,4 +262,68 @@ footer{
 
 
 
+@media (max-width: 600px){
+    .container-home{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .header-subtitulo{
+        text-align: center;
+       margin: 20px;
+    }
+    .form-group{
+        width: 100%;
+    }
+    .form-group input{
+        width: 100%;
+    }
 
+    .form-group img{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+    }
+    
+    
+    .error{
+        
+        font-size: 15px;
+      
+    }
+    .filtros-paginacao{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .paginacao{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .paginacao span{
+        width: 100%;
+        text-align: center;
+    }
+    .filtros{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .favoritos{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .sessao-herois{
+        justify-content: center;
+        width: 100%;
+    }
+    .card-heroi{
+        box-sizing: border-box;
+    }
+}
