@@ -276,6 +276,8 @@ footer{
     }
     .form-group input{
         width: 100%;
+        padding: 0 90px;
+        font-size: 15px;
     }
 
     .form-group img{
@@ -283,8 +285,6 @@ footer{
         top: 40%;
         left: 10%;
     }
-    
-    
     .error{
         
         font-size: 15px;
@@ -326,4 +326,108 @@ footer{
     .card-heroi{
         box-sizing: border-box;
     }
+
+
+
+
+    .hero-header{
+        display: flex;
+        justify-content: center;
+        padding: 50px 110px;
+    }
+    
+    .form-hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .form-hero input{
+        top: 15%;
+        width: 90%;
+        padding: 0 90px;
+        font-size: 15px;
+    }
+    
+    .form-hero img{
+        position: absolute;
+        top: 22.2%;
+        left: 10%;
+    }
+    .hero-container{
+        width: 90%;
+        margin: 0 5%;
+        padding-top: 50px;
+        
+    }
+    .hero-main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-hero img{
+        width: 300px;
+    }
+    .hero-dados{
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .hero-titulo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .descricao{
+        padding: 10px;
+    }
+    .afins{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hero-section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    
+    .comic-card{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px 0
+    }
+
+    .comic-img{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .comic-card:nth-child(6n){
+        margin-right: 0;
+    }
+    .comic-card:nth-child(6n+1){
+        margin-left: 0;
+    }
+    
+    .comic-footer{
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .comic-footer span{
+        text-align: center;
+    }
+    
+    
 }
