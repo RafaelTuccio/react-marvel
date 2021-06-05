@@ -6,13 +6,13 @@ import favoritoOn from "../../assets/favorito_01.svg"
 
 
 const Filter = (props) => {
-    let { favorito, filtro, getFiltro, showFavorito} = props;
+    let { favorito, filtro, getFiltro, showFavorito, count, total} = props;
 
     return(
        
             <div className="filtros-paginacao"> 
                 <div className="paginacao">
-                    <span>Encontrados 20 heróis</span>
+                    <span>Encontrados {count} de {total} heróis</span>
                 </div>
                 <div className="filtros">
                     <img src={ic_heroi} alt="" />

@@ -10,10 +10,16 @@ export const getHeroes = async (order) => {
         let hash = "&hash=0ddec45d15e5daf65919c9ef98e48a06";
         if(order){
             let heroes = await axios.get(url + orderBy + ts + apikey + hash);
-            return heroes.data.data.results
+            return {heroes:heroes.data.data.results, data: heroes.data}
         }else{
             let heroes = await axios.get(url + ts + apikey + hash);
-            return heroes.data.data.results
+            return {
+                    heroes: heroes.data.data.results,
+                    limit: heroes.data.data.limit,
+                    count: heroes.data.data.count,
+                    offset: heroes.data.data.offset,
+                    total: heroes.data.data.total,
+                }
 
         }
     }catch(err){
