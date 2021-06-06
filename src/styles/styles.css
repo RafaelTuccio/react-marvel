@@ -118,7 +118,7 @@ body{
     justify-content: space-between;
 }
 
-.card-heroi img {
+.card-heroi .hero-img-profile {
     border-bottom: 3px solid red;
 }
 

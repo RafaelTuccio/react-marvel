@@ -12,7 +12,7 @@ exports[`<HomeHeader /> deve dar match com o snapshot 1`] = `
       src="logo.svg"
     />
     <h1>
-      EXPORE O UNIVERSO
+      EXPLORE O UNIVERSO
     </h1>
     <span
       class="header-subtitulo"

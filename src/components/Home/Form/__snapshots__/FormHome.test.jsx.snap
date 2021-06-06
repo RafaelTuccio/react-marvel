@@ -3,16 +3,20 @@
 exports[`<FormHome /> deve dar match com o snapshot 1`] = `
 <div>
   <form
-    class="form-hero"
+    class="form-group"
   >
+    <label
+      for=""
+    >
+      <img
+        alt=""
+        src="ic_busca.svg"
+      />
+    </label>
     <input
       placeholder="Procure por um herói"
       type="text"
       value=""
-    />
-    <img
-      alt="icone de lupa"
-      src="ic_busca.svg"
     />
   </form>
   <div

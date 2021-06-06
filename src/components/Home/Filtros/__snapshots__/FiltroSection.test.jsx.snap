@@ -8,7 +8,9 @@ exports[`<FiltroSection /> deve dar match com o snapshot 1`] = `
     class="paginacao"
   >
     <span>
-      Encontrados 20 heróis
+      Encontrados 
+       de 
+       heróis
     </span>
   </div>
   <div

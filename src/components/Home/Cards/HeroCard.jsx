@@ -29,7 +29,7 @@ const HeroCard = (props) => {
     
      return(
         <div className="card-heroi">
-            <img src={hero.thumbnail.path + tamanho + hero.thumbnail.extension} alt="foto heroi" />
+            <img className="hero-img-profile" src={hero.thumbnail.path + tamanho + hero.thumbnail.extension} alt="foto heroi" />
             <div className="card-heroi-footer">
                 <span>{hero.name}</span>
                 <div onClick={() => {
