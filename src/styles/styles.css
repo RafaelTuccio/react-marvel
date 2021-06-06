@@ -118,6 +118,10 @@ body{
     justify-content: space-between;
 }
 
+.card-heroi img {
+    border-bottom: 3px solid red;
+}
+
 footer{
     background-color: red;
     width: 100%;
@@ -260,9 +264,15 @@ footer{
     text-align: center;
 }
 
+@media (max-width: 1600px){
+    .img-hero img{
+        width: 400px;
+     }
+}
 
 
-@media (max-width: 600px){
+
+@media (max-width: 800px){
     .container-home{
         width: 90%;
         margin: 0 5%;
